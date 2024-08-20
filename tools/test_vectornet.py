@@ -73,7 +73,7 @@ if __name__ == "__main__":
                         # default="best_VectorNet.pth",
                         help="resume a model state for fine-tune")
 
-    parser.add_argument("-sd", "--save_dir", type=str, default="work_dir/test/"),
+    parser.add_argument("-sd", "--save_dir", type=str, default="work_dir/test_vectornet/"),
     parser.add_argument("-sv", "--save_pred", action="store_true", default=True)
     parser.add_argument("--on_memory", type=bool, default=True, help="Loading on memory: true or false")
     args = parser.parse_args()

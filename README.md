@@ -106,3 +106,9 @@ VectorNet speed:
 ~~c. Excute~~
 
 > ~~./vectornet ../../models/traced_vectornet.pt~~
+
+## 个人电脑
+测试时候需要添加训练后的模型路径
+-b 不能太大，128内存不足，改成了20
+例如
+python tools/test_vectornet.py -d ./mini_data -b 20 -rm /home/alon/Learning/vectornet_tnt/tnt_vectornet_with_tensorrt/work_dir/vectornet/08_19_21_53/best_VectorNet.pth
